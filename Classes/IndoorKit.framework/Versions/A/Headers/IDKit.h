@@ -1255,4 +1255,45 @@
  */
 + (NSString *_Nullable)getServerURL;
 
+/*!
+ * The method checks the availability of the location services
+ * @return BOOL
+ */
++ (BOOL)locationServicesEnabled;
+
+/*!
+ * The method returns the saved project id.
+ * @return NSString.
+ */
++ (NSString *_Nullable)getProjectId;
+
+#pragma mark - Custom markers
+
+// + addCustomMarkersWithPOIs:pois
+//
+/*!
+ * The method will add custom markers
+ @param aPOIs IDPoi list
+ * @return NSArray.
+ */
++ (NSArray*_Nonnull)addCustomMarkersWithPOIs:(NSArray*_Nonnull)aPOIs;
+
+// + showCustomMarkersWithIds:markersIds
+//
+/*!
+ * The method will show markers on the map
+ * If markersIds = nil will show all exist custom markers
+ @param markersIds markers identifiers list
+ */
++ (void)showCustomMarkersWithIds:(NSArray*_Nullable)markersIds;
+
+// + removeCustomMarkersWithIds:markersIds
+//
+/*!
+ * The method will remove markers from the map
+ * If markersIds = nil will remove all exist custom markers
+ @param markersIds markers identifiers list
+ */
++ (void)removeCustomMarkersWithIds:(NSArray*_Nullable)markersIds;
+
 @end

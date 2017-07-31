@@ -129,17 +129,46 @@
 /*!
  * Call This Method in order to the location for the currently center of the map view
  */
-
 -(IDLocation*) getMapCenterPosition;
 
 
+/*!
+ Call This Method in order to show parking poi on the map
+ */
 -(void)selectParkingPoi;
 
+
+/*!
+ Call This Method in order to set the default zoom value for the map
+ @param nZoom the default zoom value for  the map
+ */
 -(void) setDefaultZoomLevel:(float)nZoom;
+
+
+/*!
+ Call This Method in order to set the minimum zoom value for the map and the maximum zoom value for the map
+
+ @param aMinZoom the minimum zoom value for  the map
+ @param aMaxZoom the maximum zoom value for  the map
+ */
 -(void) setMinZoom:(float)aMinZoom maxZoom:(float)aMaxZoom;
+
+/*!
+ Call This Method in order to exit from "followMeMode"
+ */
 -(void) exitFollowMeMode;
 
+
+/*!
+ Call This Method in order to add the destination marker on the map
+ @param aLocation the location of destination point
+ */
 -(void)setFixedDestinationLocation:(IDLocation*)aLocation;
+
+/*!
+ Call This Method in order to update custom markers on the map
+ */
+- (void)reloadCustomMarkers;
 
 @end
 
