@@ -806,10 +806,10 @@
  * @param   poiList that you want to get distance to
  * @param   location from you want to start distance calculation
  * @param   isSortedByDistance indicates if the result should be sorted by distance
- * @return  array of IDPoiDistance objects
- * this method returns the list of IDPoiDistance instances, containing IDPoi and the distance.
+ * @return  array of IDPoi objects with updated property poiDistance
+ * this method returns the list of IDPoi instances, containing IDPoiDistance object.
  */
-+ (NSArray <IDPoiDistance *> *_Nonnull)getDistanceToPoiList:(NSArray *_Nonnull)poiList fromLocation:(IDLocation *_Nonnull)location sortedByDistance:(BOOL)isSortedByDistance;
++ (NSArray <IDPoi *> *_Nonnull)getDistanceToPoiList:(NSArray *_Nonnull)poiList fromLocation:(IDLocation *_Nonnull)location sortedByDistance:(BOOL)isSortedByDistance;
 
 
 #pragma mark - Parking APIs
