@@ -7,6 +7,7 @@
 
 @class IDLocation;
 @class IDCategory;
+@class IDPoiDistance;
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 //
@@ -53,9 +54,15 @@
 
 
 /*!
- * @brief The Poi Info Dictionary.
+ * @brief The Poi Distance Infor from current user location.
  */
 @property (nonatomic, strong) NSDictionary *info;
+
+
+/*!
+ * @brief The Poi Info Dictionary.
+ */
+@property (nonatomic, strong) IDPoiDistance *poiDistance;
 
 
 /*!

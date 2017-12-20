@@ -34,11 +34,11 @@
 		</data>
 		<key>IDInstructionsViewController.nib</key>
 		<data>
-		fy/HzQpIbr5QH6M4smuJDzOBkS4=
+		veIZ8pUkJFlYt9dPLQu75yJ4U1I=
 		</data>
 		<key>IDMapViewController.nib</key>
 		<data>
-		bteGfF1NfokMqxZlrUoa7iivLtE=
+		GbKiF7Ki4IvDXwPGKluWoeQYCwo=
 		</data>
 		<key>Images/Instruction/continue_to_destination.png</key>
 		<data>
@@ -506,11 +506,11 @@
 		</data>
 		<key>IndoorMapViewController.nib</key>
 		<data>
-		BEyu7exOq2dKOJnvuyhuvA8w5XM=
+		/ER3bW9isDUt1B1bLXkdQi1Ma7w=
 		</data>
 		<key>OutdoorMapViewController.nib</key>
 		<data>
-		5GdVYDydqxsMNusT1pUtofA1xmE=
+		eWSeNkr5yhC09EPtS66jUhopYHQ=
 		</data>
 		<key>instructionsPlist/instructions-en.plist</key>
 		<data>
@@ -884,22 +884,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fy/HzQpIbr5QH6M4smuJDzOBkS4=
+			veIZ8pUkJFlYt9dPLQu75yJ4U1I=
 			</data>
 			<key>hash2</key>
 			<data>
-			oqrYy1cKRbcwNc3fGWTop8K2WXKbieoxI/FnRGjtBxs=
+			irDALpQIBGhux503+9JFagQmiEXco2KXrPJxFo3+w3g=
 			</data>
 		</dict>
 		<key>IDMapViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bteGfF1NfokMqxZlrUoa7iivLtE=
+			GbKiF7Ki4IvDXwPGKluWoeQYCwo=
 			</data>
 			<key>hash2</key>
 			<data>
-			zIosL/mherQgCfzlbFh4eUevAm8tm7cxVbEvrnAgzM8=
+			W/4BE4lCKqAo+MQ0x6PABvToZU8RE12wsf1AyKSXwOo=
 			</data>
 		</dict>
 		<key>Images/Instruction/continue_to_destination.png</key>
@@ -2182,22 +2182,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BEyu7exOq2dKOJnvuyhuvA8w5XM=
+			/ER3bW9isDUt1B1bLXkdQi1Ma7w=
 			</data>
 			<key>hash2</key>
 			<data>
-			p+JjvDs9FBmXdbvTfeFlrU+LSFCtNNlTlBvuKNgI3fg=
+			q8ikjx13KByq/bJms9jsENlD5u1X7INlowsQjcDLRyY=
 			</data>
 		</dict>
 		<key>OutdoorMapViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5GdVYDydqxsMNusT1pUtofA1xmE=
+			eWSeNkr5yhC09EPtS66jUhopYHQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			wnphnPpOuEOwlEDDfhZ87o0yKat/EGbEg0Al10EdnpI=
+			sELUk2WwRnVmxhYqxUvTeoM2dpipNUh9BTr735UnBkI=
 			</data>
 		</dict>
 		<key>instructionsPlist/instructions-en.plist</key>

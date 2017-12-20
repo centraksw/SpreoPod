@@ -44,6 +44,7 @@
 #import "IndoorKit/IDProjectLocation.h"
 
 #import "IDCategory.h"
+#import "IDPoiDistance.h"
 
 
 #ifndef __IDKIT_AVAILABLE_BUT_DEPRECATED
@@ -436,6 +437,12 @@
 
 + (void)setNavigationDelegate:(nullable id<IDNavigationDelegate>)aDelegate;
 
+/*!
+ * The method is to set the Navigation distance info unit to meters/feet
+ * @param isFeet YES/ NO default to NO;
+ */
+//this mode in order to load filtered instructions plist data.
++ (void)setNavigationDistanceUnitToFeet:(BOOL)isFeet;
 
 /*!
  * The method is to set the Navigation simplified instruction status when the navigiation mode starts
@@ -454,6 +461,15 @@
  */
 
 + (BOOL)isDuringNavigation;
+
+////////////////////////////////////////////////////////////////////////////////////////
+// + navigationDistanceUnitIsFeet:
+//
+/*!
+ * The method returns a is distance info unit feet,
+ * @return  BOOL value YES in case unit is feet / NO otherwise
+ */
++ (BOOL)navigationDistanceUnitIsFeet;
 
 
 ////////////////////////////////////////////////////////////////////////////////////////
@@ -771,6 +787,30 @@
 
 + (BOOL)isUserInCampus:(NSInteger)maxDistanceFromCampus;
 
+////////////////////////////////////////////////////////////////////////////////////////
+// + getDistanceToPoi:
+//
+/*!
+ * The calculates the distance between your location and the poi.
+ * @param   poi that you want to get distance to
+ * @param   location from you want to start distance calculation
+ * @return  distance between two points
+ */
++ (CLLocationDistance)getDistanceToPoi:(IDPoi *_Nonnull)poi fromLocation:(IDLocation *_Nonnull)location;
+
+////////////////////////////////////////////////////////////////////////////////////////
+// + getDistanceToPoiList:
+//
+/*!
+ * The calculates the distance between your location and the list of pois.
+ * @param   poiList that you want to get distance to
+ * @param   location from you want to start distance calculation
+ * @param   isSortedByDistance indicates if the result should be sorted by distance
+ * @return  array of IDPoi objects with updated property poiDistance
+ * this method returns the list of IDPoi instances, containing IDPoiDistance object.
+ */
++ (NSArray <IDPoi *> *_Nonnull)getDistanceToPoiList:(NSArray *_Nonnull)poiList fromLocation:(IDLocation *_Nonnull)location sortedByDistance:(BOOL)isSortedByDistance;
+
 
 #pragma mark - Parking APIs
 
@@ -964,6 +1004,19 @@
 + (NSArray <IDPoi *> *_Nonnull)sortPOIsDistantlyWithPathID:(NSString *_Nonnull)aPathID fromLocation:(IDLocation *_Nonnull)aLocation;
 
 
+////////////////////////////////////////////////////////////////////////////////////////
+// + sortPOIsDistantly:fromLocation:
+//
+/*!
+ * The method returns sorted array of IDPoi objects for each suitable fonded poi by distance of location.
+ * @param   aPOIs array of POIs
+ * @param   aLocation the location to sort ditance from, in case the location was nil,
+ the system will sort poi's by user location.
+ * @return  Array of IDPoi objects sorted by distance
+ */
+
++ (NSArray <IDPoi *> *_Nonnull)sortPOIsDistantly:(NSArray *_Nonnull)aPOIs fromLocation:(IDLocation *_Nonnull)aLocation;
+
 
 ////////////////////////////////////////////////////////////////////////////////////////
 // + getPOIsWithCategories:atPathID:
@@ -1050,6 +1103,16 @@
  */
 + (nullable UIImage *)getIconByKeyName:(NSString *_Nonnull)aKeyName;
 
+#pragma mark - App Settings
+
+////////////////////////////////////////////////////////////////////////////////////////
+// + getDefaultAppSettings
+//
+/*!
+ * Call This method in order to get downloaded settings for application.
+ * @return  [NSDictionary] application settings.
+ */
++ (nullable NSDictionary*)getDefaultAppSettings;
 
 #pragma mark - Local Notification APIs
 

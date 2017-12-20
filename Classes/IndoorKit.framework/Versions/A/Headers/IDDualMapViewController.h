@@ -125,6 +125,13 @@
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// - getEntranceFloorId
+/*!
+ * Call This Method to get entrance floor id from faclity with maximum number of floors
+ */
+- (NSString *)getEntranceFloorId;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // - getMapCenterPosition:
 /*!
  * Call This Method in order to the location for the currently center of the map view
@@ -169,6 +176,13 @@
  Call This Method in order to update custom markers on the map
  */
 - (void)reloadCustomMarkers;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// - getTotalDistanceOfNavigationRoute
+/*!
+ * The method returns a total disatace of current navigation route
+ */
+- (NSNumber*)getTotalDistanceOfNavigationRoute;
 
 @end
 
