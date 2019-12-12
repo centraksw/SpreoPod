@@ -22,6 +22,8 @@
 #import <IndoorKit/IDConvertedLocation.h>
 //
 #import <IndoorKit/IDPoi.h>
+#import <IndoorKit/IDFriend.h>
+
 //
 #import <IndoorKit/IDNavigationType.h>
 #import <IndoorKit/IDRoute.h>
@@ -195,6 +197,16 @@
 + (void)stopPollingUsersLocationSharingData;
 
 
+////////////////////////////////////////////////////////////////////////////////////////
+// + setLocationReportLimitation:
+//
+/*!
+ With this method you can limit analytics location update with
+ type = 0 - Always
+ type = 1 - Indoor
+ type = 2 - In Campus
+ */
++ (void)setLocationReportLimitation: (ReportLimitation)reportLimit;
 
 ////////////////////////////////////////////////////////////////////////////////////////
 // + setMonitoringMode:
@@ -209,7 +221,41 @@
 
 + (void)setMonitoringMode:(BOOL)aMode;
 
+////////////////////////////////////////////////////////////////////////////////////////
+// + setAutomaticReRoute:
++ (void)setAutomaticReRoute:(BOOL)aMode;
 
+
+////////////////////////////////////////////////////////////////////////
+// + setZipPackageWithoutMaps:
+//
+
++ (void)setZipPackageWithoutMaps:(BOOL)aMode;
+
+
+////////////////////////////////////////////////////////////////////////
+// + setMotionDR:
+//
+
++ (void)setMotionDR:(BOOL)aMode;
+
+////////////////////////////////////////////////////////////////////////
+// + setNoOutdoorCampus:
+//
+
++ (void)setNoOutdoorCampus:(BOOL)aMode;
+
+////////////////////////////////////////////////////////////////////////
+// + setTileCaching:
+//
+
+ + (void)setTileCaching:(BOOL)aMode;
+
+////////////////////////////////////////////////////////////////////////
+// + setExitCloseToOrigin:
+//
+
++ (void)setExitCloseToOrigin:(BOOL)aMode;
 
 ////////////////////////////////////////////////////////////////////////////////////////
 // + setAnalyticsMode:
@@ -251,17 +297,26 @@
  */
 + (void)sendAnalyticsReportWithAction:(NSString *_Nullable )anAction andTitle:(NSString *_Nullable)aTitle;
 
++ (void)sendAnalyticsReportWithAction:(NSString*)anAction andTitle:(NSString*)aTtile floorId:(NSInteger)floorID campusId:(NSString*)campusID facilityId:(NSString*)facilityID;
+
+////////////////////////////////////////////////////////////////////////////////////////
+// + enableLogging:
+//
+/*!
+ * Enables console log output for the SDK.
+ * @param yesOrNo NO by default.
+ */
++ (void)enableLogging:(BOOL)yesOrNo;
 
 ////////////////////////////////////////////////////////////////////////////////////////
 // + setLoggerWithMode:
 //
 /*!
- * The method sets the logger mode, yes will engage the logger, and no will turn it off.
+ * The method sets the logger mode to File | Server.
+ * YES will engage the logger, and NO will turn it off.
  * @param   aMode YES / NO
  */
-
 + (void)setLoggerWithMode:(BOOL)aMode;
-
 
 ////////////////////////////////////////////////////////////////////////////////////////
 // + monitorCampusRegion:
@@ -1350,6 +1405,19 @@
  */
 + (void)showCustomMarkersWithIds:(NSArray*_Nullable)markersIds;
 
+// + IDFriendManager : Update Friend, Remove All Friends
++ (void)updateFriends:(NSArray *_Nullable)frds;
++ (void)removeFriends:(NSArray *_Nullable)frds;
++ (void)removeFriend:(IDFriend*_Nonnull)frd;
++ (void)getFriendsForFloorId:(NSInteger)floorId;
++ (void)showAllFriends;
++ (void)hideAllFriends;
++ (void)removeAllFriends;
++ (void)showFriendsForFloorId:(NSInteger)floorId;
+/*!
+ * The method will add/remove Friend markers
+ */
+
 // + removeCustomMarkersWithIds:markersIds
 //
 /*!
@@ -1358,5 +1426,24 @@
  @param markersIds markers identifiers list
  */
 + (void)removeCustomMarkersWithIds:(NSArray*_Nullable)markersIds;
+
++ (void)addCustomPois:(NSArray *_Nullable)pois;
++ (void)removeCustomPois:(NSArray *_Nullable)pois;
++ (NSArray *_Nonnull)allCustomPois;
++ (void)setClusterLabel:(BOOL)aMode;
+
+
+
+/*!
+ * When it's turned on, Navigation route line will show dashed/dotted
+ */
++ (void)setDashedRoute:(BOOL)aMode;
++ (void)setDictionaryForMultiPoints:(BOOL)aMode;
++ (void)setForceStop:(BOOL)forceStop;
++ (void)setColorForRoute:(UIColor*)aColor;
++ (void)setStrokeWidthForRoute:(int)aWidth;
+
+
+
 
 @end

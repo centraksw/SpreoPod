@@ -32,8 +32,11 @@ typedef enum{
 #define kDefTextSize           @"def_txt_size"
 #define kFontBold              @"font_bold"
 #define kFontItalic            @"font_italic"
-#define kFontUnderline         @"font_underline"
 #define kMaxTextSize           @"max_txt_size"
 #define kMinTextSize           @"min_txt_size"
 #define kFontSize              @"font_size"
 
+#define kFontAttributed        @"font_attributed"
+#define kFontUnderline         @"font_underline"
+#define kStrokeWidth           @"stroke_width"
+#define kStrokeColor           @"stroke_color"

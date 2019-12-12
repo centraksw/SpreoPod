@@ -50,5 +50,16 @@
  */
 @property(nonatomic, assign) BOOL rotateGestures;
 
+/**
+ * In case of NO MapViewController behaves as following:
+ *
+ * When the chosen floor on the floor picker does not exist for a specific building a MapViewController will not draw
+ * all the floor data for that building. For example if the chosen floor on the floor picker is 5 and the building has
+ * only 3 floors MapViewController will not draw the POIs, facility overlay, navigation path, parking, etc... on that
+ * building.
+ *
+ * Default is YES.
+ */
+@property(nonatomic, assign) BOOL displayTopFloorContent;
 
 @end

@@ -58,12 +58,18 @@
  */
 @property (nonatomic, strong) NSDictionary *info;
 
+@property (nonatomic) BOOL labelAlgorithm;
+@property (nonatomic) BOOL isShowIcon;
+@property (nonatomic) BOOL isShowLabel;
+@property (nonatomic) int showType;
+@property (nonatomic, strong) UIImage* iconWithTitle;
+@property (nonatomic, strong) UIImage* iconJustTitle;
 
 /*!
  * @brief The Poi Info Dictionary.
  */
 @property (nonatomic, strong) IDPoiDistance *poiDistance;
-
+ 
 
 /*!
  *  IDPoi designated Intitializer

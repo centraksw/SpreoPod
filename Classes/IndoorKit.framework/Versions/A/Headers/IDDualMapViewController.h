@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import <GoogleMaps/GoogleMaps.h>
+
 #import "IDNavigationDelegate.h"
 #import "IDDualMapViewControllerDelegate.h"
 
@@ -17,6 +19,7 @@
 
 @interface IDDualMapViewController : UIViewController <IDMapViewProtocol, IDNavigationDelegate, IDLocationListener>
 
+@property (nonatomic, strong) IBOutlet GMSMapView *mapView_;
 
 /*!
  * @brief mapMinZoomLevel The Map Minimum zoom level.
@@ -121,9 +124,11 @@
  * Call This Method in order to set the floor index on all venues
  * @param floorId  the floor Id to set on all venues
  */
-- (BOOL)prepareMapForVenuesForFloorId:(NSString*)floorId;
-
-
+- (BOOL)prepareMapForVenuesForFloorId:(NSString*)floorId :(BOOL)forceToUpdate;
+- (BOOL)forcePrepareMapForVenuesForFloorId:(NSString*)floorId;
+- (void)updateUserLocationWithSmoothlyAnimation;
+- (void)refreshRouteLine;
+- (void) setUserMarkerDisplay:(BOOL)userMarker;
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // - getEntranceFloorId
 /*!
@@ -150,6 +155,9 @@
  @param nZoom the default zoom value for  the map
  */
 -(void) setDefaultZoomLevel:(float)nZoom;
+
+
+-(void)limitPoiAlgorithmSetup;
 
 
 /*!
@@ -183,6 +191,9 @@
  * The method returns a total disatace of current navigation route
  */
 - (NSNumber*)getTotalDistanceOfNavigationRoute;
-
+-(void)setIc;
+-(void) addPolygonWithPoiId:(NSString*)poiId :(BOOL)avaliable;
+-(void) addPolygons;
+-(void) removePolygonyWithId:(NSString*)poiId;
 @end
 

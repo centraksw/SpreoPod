@@ -27,6 +27,12 @@ typedef NS_ENUM(NSInteger, IDLocationDetectionStatus) {
     kLocationDetectionDetectNON   = 5
 };
 
+typedef NS_ENUM(NSInteger, ReportLimitation) {
+    kLimitMonitoringKeyAlways,
+    kLimitMonitoringKeyIndoor,
+    kLimitMonitoringKeyInCampus
+};
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 // IDRegionEventType
@@ -84,8 +90,11 @@ typedef NS_ENUM(NSInteger, IDNavInstructions) {
     kNavInstructionProceedOutdoor           = 10,
     kNavInstructionProceedIndoor            = 11,
     kNavInstructionProceedArrowDirection    = 12,
-    kNavInstructionSimplifiedDestination    = 13,
+    kNavInstructionEscalatorUp              = 13,
+    kNavInstructionEscalatorDown            = 14,
+    kNavInstructionSimplifiedDestination    = 15,
     kNavInstructionDoNothing                = 99
+
 };
 
 

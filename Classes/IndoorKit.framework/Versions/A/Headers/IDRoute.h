@@ -26,7 +26,7 @@ typedef NS_OPTIONS(unsigned int, IDRouteType) {
 @property (nonatomic, strong, readonly) IDLocation *origion;
 @property (nonatomic, strong, readonly) IDLocation *destination;
 @property (nonatomic, strong, readonly) NSArray *segments;
-@property (nonatomic, strong, readonly) NSArray *instructions;
+@property (nonatomic, strong) NSArray *instructions;
 @property (nonatomic, assign, readonly) NSInteger identifier;
 @property (nonatomic, assign, getter=getRouteType, readonly) IDRouteType routeType;
 @property (nonatomic, assign, getter=isIndoorRoute, readonly) BOOL indoorRoute;
@@ -39,6 +39,7 @@ typedef NS_OPTIONS(unsigned int, IDRouteType) {
                           andId:(NSInteger)anId NS_DESIGNATED_INITIALIZER;
 
 - (id)simplifieyRouteInstructions;
+- (void)removeDuplicateInstructions;
 
 @end
 

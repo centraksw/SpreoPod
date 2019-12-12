@@ -82,6 +82,18 @@
 			<key>text</key>
 			<string>המשך לכיוון הנתיב</string>
 		</dict>
+		<dict>
+			<key>id</key>
+			<string>elevator_up</string>
+			<key>text</key>
+			<string>עלה קומה</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>elevator_down</string>
+			<key>text</key>
+			<string>רד קומה</string>
+		</dict>
 	</array>
 	<key>continue_instruction</key>
 	<dict>
@@ -93,11 +105,10 @@
 		<key>text</key>
 		<string>בהמשך</string>
 	</dict>
-    <key>last_simplified_instruction</key>
-    <dict>
-        <key>text</key>
-        <string>המשך לכיוון הנתיב</string>
-    </dict>
-
+	<key>last_simplified_instruction</key>
+	<dict>
+		<key>text</key>
+		<string>המשך לכיוון הנתיב</string>
+	</dict>
 </dict>
 </plist>

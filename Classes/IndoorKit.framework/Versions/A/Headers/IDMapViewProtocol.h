@@ -109,6 +109,7 @@
  * @param aMode turn on / off bubbles mode
  */
 - (void)setMapBubblesMode:(BOOL)aMode;
+- (void)setMapBubblesModeForNavigation:(BOOL)aMode;
 
 
 
@@ -189,7 +190,18 @@
 - (void)setVisiblePOIsWithIds:(NSArray <NSString*> *)aPoisIds;
 
 
-
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// - setHideLabelsforPois:
+//
+- (void)updatePOIIcon:(IDPoi*)aPoi :(UIImage*_Nullable)icon;
+- (void)setShowAllOnZoomLevel:(IDPoi *_Nullable)aPoi :(BOOL)mode;
+- (void)setIsIconShown:(IDPoi *_Nullable)aPoi :(BOOL)mode;
+- (void)setLabelAlgorithm:(IDPoi *_Nullable)aPoi :(BOOL)mode;
+-(BOOL)getShowOnAllZoomLevels:(IDPoi *_Nullable)aPoi;
+-(BOOL)getHidePoiIcon:(IDPoi *_Nullable)aPoi;
+-(BOOL)getLabelAlgoritmForPoi:(IDPoi *_Nullable)aPoi;
+- (void)setIsShowLabel:(IDPoi *_Nullable)aPoi :(BOOL)mode;
+- (void)addTiles;
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // - setMapAutoFollowUserMode:
 //
@@ -229,6 +241,11 @@
  */
 - (void)presentPoiOnMapWithPoi:(IDPoi *)aPoi;
 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// - updatePresentation
+- (void)updatePresentationMode:(IDPoi *)aPoi :(BOOL)mode;
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -325,7 +342,8 @@
  */
 
 - (BOOL)setMapZoomLevel:(CGFloat)aMapZoomLevel;
-
+- (void)setMapZoomSWFT:(CGFloat)zoomLevel;
+- (void)LimitPOIs:(float)size;
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // - mapReload

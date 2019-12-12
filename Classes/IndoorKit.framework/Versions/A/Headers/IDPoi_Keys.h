@@ -20,6 +20,7 @@
 //
 #define kKeywords                   @"keywords"
 #define kIcon                       @"icon"
+#define kImageURLString             @"imageURLString"
 //
 #define kOfficeInstructions         @"instructions"
 #define kUrl                        @"url"

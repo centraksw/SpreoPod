@@ -92,7 +92,7 @@
  * each dictionary = <"id" : IDNavInstructions enum type, "text"  : instruction text ,"image" :instruction UIImage>
  * @return Returns instruction list
  */
-@property (nonatomic, getter=getInstructionsList, readonly, copy) NSArray *instructionsList;
+@property (nonatomic, getter=getInstructionsList, readonly, copy) IDCombinedRoute *instructionsList;
 
 /*!
  * call this method when the navigation have been started, get overviews
