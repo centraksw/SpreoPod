@@ -14,6 +14,8 @@ Pod::Spec.new do |s|
   
   s.vendored_frameworks = "Classes/IndoorKit.framework"
 
+  s.exclude_files = "Classes/IndoorKit.bundle/Info.plist"
+
   s.resource_bundles = {
     'IndoorKit' => ['Classes/IndoorKit.bundle/**']
   }
