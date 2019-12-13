@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "SpreoPod"
-  s.version          = "2.1"
+  s.version          = "2.1.1"
   s.summary          = "Indoor navigation SDK - SpreoPod"
  
   s.description      = "A longer description of SpreoPod in Markdown format."
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
     'IndoorKit' => ['Classes/IndoorKit.bundle/**']
   }
 
-  s.dependency 'GoogleMaps'
+  s.dependency 'GoogleMaps', '2.7.0'
   s.requires_arc          = true
- 
+  
 end
