@@ -6,7 +6,7 @@
 //
 
 #import <CoreLocation/CoreLocation.h>
-
+@class IDPoi;
 ////////////////////////////////////////////////////////////////////////////////////////////
 //
 // IDLocation
@@ -70,6 +70,8 @@
  */
 @property (nonatomic, getter=isValid, readonly) BOOL valid;
 
+
+@property (nonatomic, strong) IDPoi *poi;
 
 /*!
  *  IDLocation designated Intitializer

@@ -6,91 +6,91 @@
 	<array>
 		<dict>
 			<key>id</key>
-			<string>straight</string>
+			<string>navigate_toast</string>
 			<key>text</key>
 			<string>Go straight</string>
 		</dict>
 		<dict>
 			<key>id</key>
-			<string>turn_left</string>
+			<string>navigate_toast</string>
 			<key>text</key>
 			<string>Turn left</string>
 		</dict>
 		<dict>
 			<key>id</key>
-			<string>left_hall</string>
+			<string>navigate_toast</string>
 			<key>text</key>
 			<string>Stay on the left</string>
 		</dict>
 		<dict>
 			<key>id</key>
-			<string>turn_right</string>
+			<string>navigate_toast</string>
 			<key>text</key>
 			<string>Turn right</string>
 		</dict>
 		<dict>
 			<key>id</key>
-			<string>right_hall</string>
+			<string>navigate_toast</string>
 			<key>text</key>
 			<string>Stay on the right</string>
 		</dict>
 		<dict>
 			<key>id</key>
-			<string>elevator_up</string>
+			<string>navigate_toast</string>
 			<key>text</key>
 			<string>Go up to floor</string>
 		</dict>
 		<dict>
 			<key>id</key>
-			<string>elevator_down</string>
+			<string>navigate_toast</string>
 			<key>text</key>
 			<string>Go down to floor</string>
 		</dict>
 		<dict>
 			<key>id</key>
-			<string>destination3</string>
+			<string>navigate_toast</string>
 			<key>text</key>
 			<string>Reached</string>
 		</dict>
 		<dict>
 			<key>id</key>
-			<string>turn_back</string>
+			<string>navigate_toast</string>
 			<key>text</key>
 			<string>Turn around</string>
 		</dict>
 		<dict>
 			<key>id</key>
-			<string>recalculate</string>
+			<string>navigate_toast</string>
 			<key>text</key>
 			<string>recalculate</string>
 		</dict>
 		<dict>
 			<key>id</key>
-			<string>continue_to_path</string>
+			<string>navigate_toast</string>
 			<key>text</key>
 			<string>Follow the line</string>
 		</dict>
 		<dict>
 			<key>id</key>
-			<string>continue_to_path</string>
+			<string>navigate_toast</string>
 			<key>text</key>
 			<string>Follow the line to</string>
 		</dict>
 		<dict>
 			<key>id</key>
-			<string>continue_to_destination</string>
+			<string>navigate_toast</string>
 			<key>text</key>
 			<string>Follow the line to</string>
 		</dict>
 		<dict>
 			<key>id</key>
-			<string>elevator_up</string>
+			<string>navigate_toast</string>
 			<key>text</key>
 			<string>Go up to floor</string>
 		</dict>
 		<dict>
 			<key>id</key>
-			<string>elevator_down</string>
+			<string>navigate_toast</string>
 			<key>text</key>
 			<string>Go down to floor</string>
 		</dict>

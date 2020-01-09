@@ -295,8 +295,6 @@
  * @code [IDKit sendAnalyticsReportWithAction:kAnalyticsActionSearch andTitle:@"apoiId"];
  @endcode
  */
-+ (void)sendAnalyticsReportWithAction:(NSString *_Nullable )anAction andTitle:(NSString *_Nullable)aTitle;
-
 + (void)sendAnalyticsReportWithAction:(NSString*)anAction andTitle:(NSString*)aTtile floorId:(NSInteger)floorID campusId:(NSString*)campusID facilityId:(NSString*)facilityID;
 
 ////////////////////////////////////////////////////////////////////////////////////////
@@ -771,6 +769,16 @@
 + (IDInstructionsViewController *_Nonnull)getInstructionsController;
 
 
+////////////////////////////////////////////////////////////////////////////////////////
+// + setDestinationTitle
+//
+/*!
+ * The method returns the destination title POI.
+ * @return  Instructions controller
+ */
+
++ (NSString *_Nonnull)setDestinationTitle:(NSString *_Nonnull)destination;
+
 #pragma mark - User Location APIs
 
 ////////////////////////////////////////////////////////////////////////////////////////
@@ -806,6 +814,7 @@
  */
 
 + (void)setUserLocation:(IDUserLocation *_Nullable)aUserLocation;
++ (void)setForceUserLocation:(IDUserLocation *_Nullable)userLocation;
 
 ////////////////////////////////////////////////////////////////////////////////////////
 // + setCurrentUserLocation:
@@ -877,6 +886,17 @@
  * @param aLocation the location to set.
  */
 
++ (void)setPoiMarkerLocation:(IDLocation *_Nullable)aLocation;
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+// + setParkingLocation:
+//
+/*!
+ * The method set the location as parking location.
+ * @param aLocation the location to set.
+ */
+
 + (void)setParkingLocation:(IDLocation *_Nullable)aLocation;
 
 ////////////////////////////////////////////////////////////////////////////////////////
@@ -888,6 +908,10 @@
  */
 
 + (void)setCurrentLocationAsParking;
+
+
++ (void)setResetIndoorLocation:(BOOL)ResetIndoorLocationBoolean;
+
 
 
 ////////////////////////////////////////////////////////////////////////////////////////

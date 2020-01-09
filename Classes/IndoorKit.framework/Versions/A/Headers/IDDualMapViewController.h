@@ -22,9 +22,19 @@
 @property (nonatomic, strong) IBOutlet GMSMapView *mapView_;
 
 /*!
+ * @brief set green marker for origin in navigation.
+ */
+
+
+/*!
  * @brief mapMinZoomLevel The Map Minimum zoom level.
  */
 @property (nonatomic, readonly) CGFloat mapMinZoomLevel;
+
+
+@property (nonatomic, assign) BOOL Route;
+
+@property (nonatomic, assign) BOOL Delay;
 
 
 /*!
@@ -188,12 +198,18 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // - getTotalDistanceOfNavigationRoute
 /*!
- * The method returns a total disatace of current navigation route
+ * The method returns a total distance of current navigation route
  */
 - (NSNumber*)getTotalDistanceOfNavigationRoute;
 -(void)setIc;
 -(void) addPolygonWithPoiId:(NSString*)poiId :(BOOL)avaliable;
 -(void) addPolygons;
+-(void) placeOriginMarker:(BOOL)marker;
 -(void) removePolygonyWithId:(NSString*)poiId;
+
+- (CGFloat)calcDistanceBetweenCoordinate:(CLLocationCoordinate2D)poiLocation andCoordinate:(CLLocationCoordinate2D)position;
+
+- (void)updateUserMarkerOutdoorPosition;
+
 @end
 

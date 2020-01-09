@@ -211,7 +211,7 @@
                    facilityId:(NSString*)facilityId
                       floorId:(NSString*)floorId;
 
-
+- (void)mapDidTapAtLocation:(IDLocation *)location;
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // - mapDidLongPressAtCoordinate:: √

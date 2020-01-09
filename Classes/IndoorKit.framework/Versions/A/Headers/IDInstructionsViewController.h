@@ -20,6 +20,9 @@
 @interface IDInstructionsViewController : UIViewController
 
 
+- (void) setDestinationTitle:(NSString *)destinationTitle;
+
+
 /*!
  * @brief in order to get IDInstructionsViewController the callbacks.
  */
