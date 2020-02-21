@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "SpreoPod"
-  s.version          = "2.11"
+  s.version          = "2.12"
   s.summary          = "Indoor navigation SDK - SpreoPod"
  
   s.description      = "A longer description of SpreoPod in Markdown format."
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.author           = { "Sandeep" => "sandeep.mahajan@systematixindia.com" }
   s.source           = { :git => "https://github.com/SpreoLLC/SpreoPod.git", :tag => s.version.to_s }
  
-  s.platform     = :ios, '10.0'
+  s.platform     = :ios, '8.0'
   
   s.vendored_frameworks = "Classes/IndoorKit.framework"
 
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
     'IndoorKit' => ['Classes/IndoorKit.bundle/**']
   }
 
-  s.dependency 'GoogleMaps', '3.7.0'
+  s.dependency 'GoogleMaps', '2.7.0'
   s.requires_arc          = true
   
 end
