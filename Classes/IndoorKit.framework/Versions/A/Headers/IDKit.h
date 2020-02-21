@@ -948,6 +948,26 @@
 
 #pragma mark - Campus, Facility & Floor Info APIs
 
+
+////////////////////////////////////////////////////////////////////////////////////////
+// + getFloorsInRoute
+//
+/*!
+ * The method returns an array of floors id's.
+ * @return  Array of all project floors ids of selected route
+ */
++ (NSArray <NSString *> *_Nonnull) getFloorsInRoute;
+
+
+//
+/*!
+ * The method reset All floors id's.
+ * @return  Empty Array of all project floors ids of selected route
+ */
++ (void) resetFloorsInRoute;
+
+
+
 ////////////////////////////////////////////////////////////////////////////////////////
 // + getCampusIDs
 //
