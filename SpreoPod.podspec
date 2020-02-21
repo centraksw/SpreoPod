@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.author           = { "Sandeep" => "sandeep.mahajan@systematixindia.com" }
   s.source           = { :git => "https://github.com/SpreoLLC/SpreoPod.git", :tag => s.version.to_s }
  
-  s.platform     = :ios, '8.0'
+  s.platform     = :ios, '10.0'
   
   s.vendored_frameworks = "Classes/IndoorKit.framework"
 
