@@ -1,10 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "SpreoPod"
-<<<<<<< HEAD
-  s.version          = "2.25"
-=======
-  s.version          = "2.20"
->>>>>>> parent of 27bb6aa... Update POD to 2.21
+  s.version          = "2.21"
   s.summary          = "Indoor navigation SDK - SpreoPod"
  
   s.description      = "A longer description of SpreoPod in Markdown format."
