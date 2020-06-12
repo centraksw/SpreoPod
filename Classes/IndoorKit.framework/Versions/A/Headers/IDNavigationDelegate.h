@@ -81,4 +81,16 @@
 - (void)navigationArriveToLocation:(IDLocation *)aLocation nextLocations:(NSArray<IDLocation*> *)aNextLocations;
 
 
+////////////////////////////////////////////////////////////////////////////////////////
+// + isServerAPICallSuccess:
+//
+/*!
+ * The method enables / disables the user location sharing mode.
+ * interval in seconds between updates is 300 seconds (5 min).
+ * @param   aStatus BOOL value
+ */
+
+- (void)isServerAPICallSuccess:(BOOL)aStatus;
+
+
 @end

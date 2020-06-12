@@ -144,6 +144,16 @@
 
 + (void)setUserID:(NSString *_Nullable)anIdentifier;
 
+////////////////////////////////////////////////////////////////////////////////////////
+// + callServerRouteAPIFrom:
+//
+/*!
+ * The method call API to get the server route.
+ * @param   anOrigionLocation IDLocation value
+ * @param   anDestinationLocation IDLocation value
+ */
+
++ (void)callServerRouteAPIFrom:(IDLocation *_Nonnull)anOrigionLocation toLocation:(IDLocation *_Nonnull)anDestinationLocation;
 
 
 ////////////////////////////////////////////////////////////////////////////////////////
@@ -1271,6 +1281,51 @@
  * \code    [IDKit setCurrentLanguage:@"es"];
  */
 + (BOOL)setCurrentLanguage:( NSString *_Nonnull)aLanguage;
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+// + handicappedRouting:
+//
+/*!
+ * The method returns The Indoor Kit handicapped status,
+ * @return  bool The Indoor Kit true, false
+ */
++ (BOOL)handicappedRouting;
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+// + setHandicappedRouting:
+//
+/*!
+ * The method is to be called to set The Indoor Kit set handicapped status, accordingly the server route path will be change
+ * @param   aHandicapped bool that represent The Indoor Kit handicapped status true/false..
+ * \code    [IDKit setHandicappedRouting:false];
+ */
++ (void)setHandicappedRouting:( BOOL)aHandicapped;
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+// + staffRouting:
+//
+/*!
+ * The method returns The Indoor Kit staff route 1/0 default will be 0,
+ * @return  NSInteger The Indoor Kit 1,0,
+ *  */
++ (NSInteger)staffRouting;
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+// + setStaffRouting:
+//
+/*!
+ * The method is to be called to set The Indoor Kit set staff route status, accordingly the server route path will be change
+ * @param   aStaffRoute NSInteger that represent The Indoor Kit StaffRouting status 1/0..
+ * \code    [IDKit setStaffRouting:0];
+ */
++ (void)setStaffRouting:( NSInteger)aStaffRoute;
+
+
 
 
 ////////////////////////////////////////////////////////////////////////////////////////

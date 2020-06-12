@@ -200,7 +200,9 @@
 /*!
  * The method returns a total distance of current navigation route
  */
-- (NSNumber*)getTotalDistanceOfNavigationRoute;
+- (double)getTotalDistanceOfNavigationRoute;
+- (double)getTotalTimeEstimationServerRoute;
+
 -(void)setIc;
 -(void) addPolygonWithPoiId:(NSString*)poiId :(BOOL)avaliable;
 -(void) addPolygons;
