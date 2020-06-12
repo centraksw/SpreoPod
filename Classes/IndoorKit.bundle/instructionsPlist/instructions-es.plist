@@ -6,33 +6,15 @@
 	<array>
 		<dict>
 			<key>id</key>
-			<string>straight</string>
-			<key>text</key>
-			<string>Siga derecho</string>
-		</dict>
-		<dict>
-			<key>id</key>
-			<string>turn_left</string>
-			<key>text</key>
-			<string>Doble a la izquierda</string>
-		</dict>
-		<dict>
-			<key>id</key>
 			<string>left_hall</string>
 			<key>text</key>
 			<string>Manténgase a la izquierda</string>
 		</dict>
 		<dict>
 			<key>id</key>
-			<string>turn_right</string>
+			<string>straight</string>
 			<key>text</key>
-			<string>Doble a la derecha</string>
-		</dict>
-		<dict>
-			<key>id</key>
-			<string>right_hall</string>
-			<key>text</key>
-			<string>Manténgase a la derecha</string>
+			<string>Siga derecho</string>
 		</dict>
 		<dict>
 			<key>id</key>
@@ -42,15 +24,39 @@
 		</dict>
 		<dict>
 			<key>id</key>
-			<string>elevator_down</string>
+			<string>turn_left</string>
 			<key>text</key>
-			<string>Vaya al piso</string>
+			<string>Doble a la izquierda</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>turn_right</string>
+			<key>text</key>
+			<string>Doble a la derecha</string>
 		</dict>
 		<dict>
 			<key>id</key>
 			<string>destination3</string>
 			<key>text</key>
 			<string>Llegó</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>continue_to_path</string>
+			<key>text</key>
+			<string>Salga al exterior</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>right_hall</string>
+			<key>text</key>
+			<string>Manténgase a la derecha</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>elevator_down</string>
+			<key>text</key>
+			<string>Vaya al piso</string>
 		</dict>
 		<dict>
 			<key>id</key>
@@ -63,12 +69,6 @@
 			<string>recalculate</string>
 			<key>text</key>
 			<string>Recalcular</string>
-		</dict>
-		<dict>
-			<key>id</key>
-			<string>continue_to_path</string>
-			<key>text</key>
-			<string>Salga al exterior</string>
 		</dict>
 		<dict>
 			<key>id</key>
