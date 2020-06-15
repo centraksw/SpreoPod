@@ -6,6 +6,7 @@
 //
 
 #import "IDGeofenceDelegate.h"
+#import <CoreGraphics/CoreGraphics.h>
 
 @class IDLocation, IDUserLocation;
 
