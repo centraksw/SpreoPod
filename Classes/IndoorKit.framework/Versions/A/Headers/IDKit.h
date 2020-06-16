@@ -301,11 +301,11 @@
  * The method sends analytics data to server, use this API when user did search for
  poi or did navigate for poi, using this API updates the server analyitcs data.
  * @param anAction string
- * @param aTitle title to send.
+ * @param aTtile title to send.
  * @code [IDKit sendAnalyticsReportWithAction:kAnalyticsActionSearch andTitle:@"apoiId"];
  @endcode
  */
-+ (void)sendAnalyticsReportWithAction:(NSString*)anAction andTitle:(NSString*)aTtile floorId:(NSInteger)floorID campusId:(NSString*)campusID facilityId:(NSString*)facilityID;
++ (void)sendAnalyticsReportWithAction:(NSString*_Nullable)anAction andTitle:(NSString*_Nullable)aTtile floorId:(NSInteger)floorID campusId:(NSString*_Nullable)campusID facilityId:(NSString*_Nullable)facilityID;
 
 ////////////////////////////////////////////////////////////////////////////////////////
 // + enableLogging:
@@ -1066,9 +1066,9 @@
                       atCmpusWithID:(NSString *_Nonnull)aCampusId;
 
 
-+ (NSArray *) getListOfProjectLocationsForCurrentAPIKey;
++ (NSArray *_Nullable) getListOfProjectLocationsForCurrentAPIKey;
 
-+ (NSArray *) getListOfProjectLocationsForAPIKey:(NSString*)apiKey;
++ (NSArray *_Nullable) getListOfProjectLocationsForAPIKey:(NSString*_Nullable)apiKey;
 
 #pragma mark - POIs Data & Sorting APIs
 
@@ -1539,7 +1539,7 @@
 + (void)setDashedRoute:(BOOL)aMode;
 + (void)setDictionaryForMultiPoints:(BOOL)aMode;
 + (void)setForceStop:(BOOL)forceStop;
-+ (void)setColorForRoute:(UIColor*)aColor;
++ (void)setColorForRoute:(UIColor*_Nonnull)aColor;
 + (void)setStrokeWidthForRoute:(int)aWidth;
 
 

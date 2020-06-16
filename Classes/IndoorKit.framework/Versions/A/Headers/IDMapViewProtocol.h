@@ -41,7 +41,7 @@
 /*!
  * @brief The current presented facilityId.
  */
-@property (nonatomic, readonly) NSString* currentPresentedFacilityID;
+@property (nonatomic, readonly) NSString*_Nullable currentPresentedFacilityID;
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -97,7 +97,7 @@
  * USE aPoi.icon property setter then call the map with map reload API
  * @code [self.mapViewController setMapIcon:[UIImage imageNamed:@"selected-green-icon" forPoi:myPoi];
  */
-- (void)setMapIcon:(UIImage *)anIcon forPoi:(IDPoi *)aPoi;
+- (void)setMapIcon:(UIImage *_Nullable)anIcon forPoi:(IDPoi *_Nullable)aPoi;
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -121,7 +121,7 @@
  * in case aMode = NO or not if YES, default bubble mode enabled
  * @param aMode turn on / off bubbles mode
  */
-- (void)setMapBubbleMode:(BOOL)aMode forPoi:(IDPoi*)aPoi;
+- (void)setMapBubbleMode:(BOOL)aMode forPoi:(IDPoi*_Nullable)aPoi;
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -175,7 +175,7 @@
  * @param aCategories the pois categories Array.
  * @note in case the aCategories parameter is nil, the Map will show all Pois.
  */
-- (void)setVisiblePOIsWithCategories:(NSArray <NSString*> *)aCategories;
+- (void)setVisiblePOIsWithCategories:(NSArray <NSString*> *_Nullable)aCategories;
 
 
 
@@ -187,13 +187,13 @@
  * @param aPoisIds pois ids [NSString] Array.
  * @note in case the aPoisIds parameter is nil, the Map will show all Pois.
  */
-- (void)setVisiblePOIsWithIds:(NSArray <NSString*> *)aPoisIds;
+- (void)setVisiblePOIsWithIds:(NSArray <NSString*> *_Nullable)aPoisIds;
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // - setHideLabelsforPois:
 //
-- (void)updatePOIIcon:(IDPoi*)aPoi :(UIImage*_Nullable)icon;
+- (void)updatePOIIcon:(IDPoi*_Nullable)aPoi :(UIImage*_Nullable)icon;
 - (void)setShowAllOnZoomLevel:(IDPoi *_Nullable)aPoi :(BOOL)mode;
 - (void)setIsIconShown:(IDPoi *_Nullable)aPoi :(BOOL)mode;
 - (void)setLabelAlgorithm:(IDPoi *_Nullable)aPoi :(BOOL)mode;
@@ -229,7 +229,7 @@
  * The map will present and center location.
  * @param aLocation IDLocation.
  */
-- (void)presentLocation:(IDLocation *)aLocation;
+- (void)presentLocation:(IDLocation *_Nullable)aLocation;
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -239,12 +239,12 @@
  * The map will present and center Poi.
  * @param aPoi IDPoi.
  */
-- (void)presentPoiOnMapWithPoi:(IDPoi *)aPoi;
+- (void)presentPoiOnMapWithPoi:(IDPoi *_Nullable)aPoi;
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // - updatePresentation
-- (void)updatePresentationMode:(IDPoi *)aPoi :(BOOL)mode;
+- (void)updatePresentationMode:(IDPoi *_Nullable)aPoi :(BOOL)mode;
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -256,7 +256,7 @@
  * use this method when get map did select or did tap Poi On Map.
  * @param aPoi IDPoi
  */
-- (void)showBubbleForPoi:(IDPoi *)aPoi;
+- (void)showBubbleForPoi:(IDPoi *_Nullable)aPoi;
 
 
 
@@ -267,7 +267,7 @@
  * The map will hide bubble for poi
  * @param aPoi IDPoi
  */
-- (void)hideBubbleForPoi:(IDPoi *)aPoi;
+- (void)hideBubbleForPoi:(IDPoi *_Nullable)aPoi;
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -278,7 +278,7 @@
  * @param aFacilityId the facility to Present
  * @param aCampusId at campus
  */
-- (void)centerFacilityMapWithFacilityId:(NSString *)aFacilityId atCampusId:(NSString *)aCampusId;
+- (void)centerFacilityMapWithFacilityId:(NSString *_Nullable)aFacilityId atCampusId:(NSString *)aCampusId;
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -288,7 +288,7 @@
  * The map will show outdoor campus map
  * @param aCampusId at campus
  */
-- (void)centerCampusMapWithCampusId:(NSString *)aCampusId;
+- (void)centerCampusMapWithCampusId:(NSString *_Nullable)aCampusId;
 
 
 
@@ -300,7 +300,7 @@
  * @param aFloorID floor index
  * @param aFacilityId the floorId of the desiered facility, nil is current presented facility
  */
-- (void)showFloorWithID:(NSInteger)aFloorID atFacilityWithId:(NSString *)aFacilityId;
+- (void)showFloorWithID:(NSInteger)aFloorID atFacilityWithId:(NSString *_Nullable)aFacilityId;
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -373,8 +373,8 @@
  * @param entrancesExits show entrance or exit location if needed.
  */
 
-- (void)setMapDrawMultiPointsForPOIs:(NSArray<IDPoi *> *)aPois
-                      visitedPoiList:(NSArray<IDPoi*> *)aVisitedPois
+- (void)setMapDrawMultiPointsForPOIs:(NSArray<IDPoi *> *_Nullable)aPois
+                      visitedPoiList:(NSArray<IDPoi*> *_Nullable)aVisitedPois
                     showSwitchFloors:(BOOL)switchFloors
                   showEntrancesExits:(BOOL)entrancesExits;
 
