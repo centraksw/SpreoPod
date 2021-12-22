@@ -90,7 +90,11 @@
  * @param   aStatus BOOL value
  */
 
-- (void)isServerAPICallSuccess:(BOOL)aStatus;
+- (void)isServerAPICallSuccess:(BOOL)aStatus typeError:(NSInteger)type;
+
+
+- (void)isServerRerouteAPICallSuccess:(BOOL)aStatus;
+
 
 
 @end

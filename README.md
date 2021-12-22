@@ -1,6 +1,6 @@
 
 # ================================ #
-#  DATE: 29 November, 2017   
+#  DATE: 22 December, 2021   
 # ================================ #
 
 ---------------------------------------------------------------------------------------------------------
@@ -23,15 +23,15 @@ ____________________________________
        IndoorKit is installing via cocoapods. 
 
     2. SampleApp
-       This sample contains example project in SWIFT 3.1
+       This sample contains example project in SWIFT 
        IndoorKit is installing via cocoapods. 
 
     3. SampleApp_Manual
-       This sample contains example project in SWIFT 3.1
+       This sample contains example project in SWIFT 
        IndoorKit is installing mannually from sdk_binary_distribution. 
 
 ---------------------------------------------------------------------------------------------------------
-# SDK VERSION: 2.0.72 RC4
+# SDK VERSION: 3.9.1
 ____________________________________
 
     * Xcode Versions: Xcode 8.x
@@ -40,7 +40,7 @@ ____________________________________
 # BUILD REQUIREMENTS:
 ____________________________________
 
-    * iOS 7.0 SDK or later
+    * iOS 9.0 SDK or later
 
 `---------------------------------------------------------------------------------------------------
     Copyright (C) 2015 Spreo LLC. All rights reserved.

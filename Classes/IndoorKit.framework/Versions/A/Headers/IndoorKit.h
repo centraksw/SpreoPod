@@ -21,3 +21,6 @@
 #import <IndoorKit/IDNavigation.h>
 #import <IndoorKit/LocationBeaconsManager.h>
 #import <IndoorKit/LocationBeacon.h>
+#import <IndoorKit/BeaconSimulator.h>
+#import <IndoorKit/MotionSimulator.h>
+#import <IndoorKit/Motion.h>

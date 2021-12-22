@@ -76,26 +76,54 @@ typedef NS_ENUM(NSInteger, IDNavigationStatus) {
  *  IDNavInstructions The navigation instructions modes.
  */
 
+//typedef NS_ENUM(NSInteger, IDNavInstructions) {
+//    kNavInstructionStraight                 = 0,
+//    kNavInstructionTurnLeft                 = 1,
+//    kNavInstructionLeftHall                 = 2,
+//    kNavInstructionTurnRight                = 3,
+//    kNavInstructionRightHall                = 4,
+//    kNavInstructionElevatorUp               = 5,
+//    kNavInstructionElevatorDown             = 6,
+//    kNavInstructionDestination              = 7,
+//    kNavInstructionTurnBack                 = 8,
+//    kNavInstructionRecalculate              = 9,
+//    kNavInstructionProceedOutdoor           = 10,
+//    kNavInstructionProceedIndoor            = 11,
+//    kNavInstructionProceedArrowDirection    = 12,
+//    kNavInstructionEscalatorUp              = 13,
+//    kNavInstructionEscalatorDown            = 14,
+//    kNavInstructionSimplifiedDestination    = 15,
+//    kNavInstructionDoNothing                = 99
+//
+//};
+
+
 typedef NS_ENUM(NSInteger, IDNavInstructions) {
-    kNavInstructionStraight                 = 0,
-    kNavInstructionTurnLeft                 = 1,
-    kNavInstructionLeftHall                 = 2,
-    kNavInstructionTurnRight                = 3,
-    kNavInstructionRightHall                = 4,
-    kNavInstructionElevatorUp               = 5,
-    kNavInstructionElevatorDown             = 6,
-    kNavInstructionDestination              = 7,
-    kNavInstructionTurnBack                 = 8,
-    kNavInstructionRecalculate              = 9,
-    kNavInstructionProceedOutdoor           = 10,
-    kNavInstructionProceedIndoor            = 11,
+    
+    kNavInstructionLeftHall                 = 0,
+    kNavInstructionStraight                 = 1,
+    kNavInstructionElevatorUp              = 2,
+    kNavInstructionTurnLeft                 = 3,
+    kNavInstructionTurnRight                = 4,
+    kNavInstructionDestination               = 5,
+    kNavInstructionProceedArrowDirection3    = 6,
+    kNavInstructionProceedArrowDirection2    = 7,
+    kNavInstructionProceedArrowDirection1    = 11,
     kNavInstructionProceedArrowDirection    = 12,
     kNavInstructionEscalatorUp              = 13,
     kNavInstructionEscalatorDown            = 14,
+    kNavInstructionRightHall                = 16,
+    kNavInstructionElevatorDown             = 17,
+    kNavInstructionTurnBack                 = 19,
+    kNavInstructionRecalculate              = 20,
+    kNavInstructionProceedOutdoor           = 21,
+    kNavInstructionProceedIndoor            = 22,
     kNavInstructionSimplifiedDestination    = 15,
     kNavInstructionDoNothing                = 99
 
 };
+
+
 
 
 

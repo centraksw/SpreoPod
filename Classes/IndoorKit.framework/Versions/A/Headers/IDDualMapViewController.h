@@ -129,6 +129,14 @@
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// - hideFacility:
+/*!
+ * Call This Method in order to hide the facility
+ */
+
+-(void)hideFacility;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // - prepareMapForVenuesForFloorId:
 /*!
  * Call This Method in order to set the floor index on all venues
@@ -209,8 +217,10 @@
 -(void) placeOriginMarker:(BOOL)marker;
 -(void) removePolygonyWithId:(NSString*)poiId;
 
+-(void)showAllFacilityIDPopup;
+- (void)showFacilityID:(NSString*)aFacilityId atCampusId:(NSString*)aCampusId;
 - (CGFloat)calcDistanceBetweenCoordinate:(CLLocationCoordinate2D)poiLocation andCoordinate:(CLLocationCoordinate2D)position;
-
+- (void) removeFacilityMarkers;
 - (void)updateUserMarkerOutdoorPosition;
 
 @end

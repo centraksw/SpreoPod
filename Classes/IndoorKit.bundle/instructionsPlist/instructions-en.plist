@@ -6,21 +6,9 @@
 	<array>
 		<dict>
 			<key>id</key>
-			<string>left_hall</string>
-			<key>text</key>
-			<string>Stay on the left</string>
-		</dict>
-		<dict>
-			<key>id</key>
 			<string>straight</string>
 			<key>text</key>
 			<string>Go straight</string>
-		</dict>
-		<dict>
-			<key>id</key>
-			<string>elevator_up</string>
-			<key>text</key>
-			<string>Go up to floor</string>
 		</dict>
 		<dict>
 			<key>id</key>
@@ -30,21 +18,15 @@
 		</dict>
 		<dict>
 			<key>id</key>
+			<string>left_hall</string>
+			<key>text</key>
+			<string>Stay on the left</string>
+		</dict>
+		<dict>
+			<key>id</key>
 			<string>turn_right</string>
 			<key>text</key>
 			<string>Turn right</string>
-		</dict>
-		<dict>
-			<key>id</key>
-			<string>destination3</string>
-			<key>text</key>
-			<string>Reached</string>
-		</dict>
-		<dict>
-			<key>id</key>
-			<string>continue_to_path</string>
-			<key>text</key>
-			<string>Follow the line to</string>
 		</dict>
 		<dict>
 			<key>id</key>
@@ -54,9 +36,21 @@
 		</dict>
 		<dict>
 			<key>id</key>
+			<string>elevator_up</string>
+			<key>text</key>
+			<string>Go up to floor</string>
+		</dict>
+		<dict>
+			<key>id</key>
 			<string>elevator_down</string>
 			<key>text</key>
 			<string>Go down to floor</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>destination3</string>
+			<key>text</key>
+			<string>Reached</string>
 		</dict>
 		<dict>
 			<key>id</key>
@@ -78,6 +72,12 @@
 		</dict>
 		<dict>
 			<key>id</key>
+			<string>continue_to_path</string>
+			<key>text</key>
+			<string>Follow the line to</string>
+		</dict>
+		<dict>
+			<key>id</key>
 			<string>continue_to_destination</string>
 			<key>text</key>
 			<string>Follow the line to</string>
@@ -93,6 +93,54 @@
 			<string>elevator_down</string>
 			<key>text</key>
 			<string>Go down to floor</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>bridge_bubble_title</string>
+			<key>text</key>
+			<string>Route continues on</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>exit_building_bubble</string>
+			<key>text</key>
+			<string>Exit building</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>entrance_building_bubble</string>
+			<key>text</key>
+			<string>Enter building</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>floor</string>
+			<key>text</key>
+			<string>Floor</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>continue_to_path</string>
+			<key>text</key>
+			<string>Follow the line</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>continue_to_path</string>
+			<key>text</key>
+			<string>Follow the line</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>continue_to_path</string>
+			<key>text</key>
+			<string>Follow the line</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>continue_to_path</string>
+			<key>text</key>
+			<string>Follow the line</string>
 		</dict>
 	</array>
 	<key>continue_instruction</key>

@@ -65,7 +65,7 @@
 @property (nonatomic) int showType;
 @property (nonatomic, strong) UIImage* iconWithTitle;
 @property (nonatomic, strong) UIImage* iconJustTitle;
-
+@property (nonatomic) float zoomValue;
 /*!
  * @brief The Poi Info Dictionary.
  */

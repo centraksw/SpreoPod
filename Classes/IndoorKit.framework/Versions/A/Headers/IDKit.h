@@ -990,6 +990,18 @@
 
 
 ////////////////////////////////////////////////////////////////////////////////////////
+// + getWebInterfaceUrl
+//
+/*!
+ * The method returns an webinterface url for sharing.
+ * @return  URL String of web interface
+ */
+
++ (NSString *_Nonnull)getWebInterfaceUrl;
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////
 // + getInfoForCampusWithID:
 //
 /*!
@@ -1040,6 +1052,33 @@
  @"entrance_floor": @(facility.entranceFloor),
  @"floors_count": @(facility.floors.count)}
  */
+
++ (NSArray <NSString *> *_Nonnull)getFacilityTitlesForCampusID:(NSString *_Nonnull)aCampusId;
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+// + getFacilityTitlesForCampusID:atCmpusWithID:
+//
+/*!
+ * The method returns a dictionary with short information of the facility at campus.
+ * @param   aFacilityId facility identifier string
+ * @param   aCampusId campus identifier string
+ * @return  Information dictionary contaning information on refered facility
+ @code {@"title": facility.title,
+ @"subtitle": facility.subtitle,
+ @"location": location,
+ @"perimeter" : @{@"top_left_coordinate_lat": @(facility.upperLeftCoordinate.latitude),
+ @"top_left_coordinate_lon": @(facility.upperLeftCoordinate.longitude),
+ @"bottom_right_coordinate_lat": @(facility.lowerRightCoordinate.latitude),
+ @"bottom_right_coordinate_lon": @(facility.lowerRightCoordinate.longitude)
+ @"rot_angle": @(facility.rotationAngle),
+ @"entrance_floor": @(facility.entranceFloor),
+ @"floors_count": @(facility.floors.count)}
+ */
+
++ (NSSet*)getFacilityForName:(NSString*)fName atCampusId:(NSString*)aCampusId;
+
+
 
 + (NSDictionary *_Nonnull)getInfoForFacilityWithID:(NSString *_Nonnull)aFacilityId
                              atCmpusWithID:(NSString *_Nonnull)aCampusId;
@@ -1303,6 +1342,28 @@
  * \code    [IDKit setHandicappedRouting:false];
  */
 + (void)setHandicappedRouting:( BOOL)aHandicapped;
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+// + getSimplifiedInstruction:
+//
+/*!
+ * The method returns The Indoor Kit simplified instruciton status,
+ * @return  bool The Indoor Kit true, false
+ */
++ (BOOL)getSimplifiedInstruction;
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+// + setSimplifiedInstruction:
+//
+/*!
+ * The method is to be called to set The Indoor Kit set simplified Instruction status, accordingly the instruction list will be change
+ * @param   aSimplifiedtatus bool that represent The Indoor Kit simplified Instruction status true/false..
+ * \code    [IDKit setSimplifiedInstruction:false];
+ */
++ (void)setSimplifiedInstruction:( BOOL)aSimplifiedtatus;
+
 
 
 ////////////////////////////////////////////////////////////////////////////////////////
