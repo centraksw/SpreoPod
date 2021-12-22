@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "SpreoPod"
-  s.version          = "2.36"
+  s.version          = "2.37"
   s.summary          = "Indoor navigation SDK - SpreoPod"
  
   s.description      = "A longer description of SpreoPod in Markdown format."
@@ -15,6 +15,9 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = "Classes/IndoorKit.framework"
 
   s.exclude_files = "Classes/IndoorKit.bundle/Info.plist"
+
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
   s.resource_bundles = {
     'IndoorKit' => ['Classes/IndoorKit.bundle/**']
