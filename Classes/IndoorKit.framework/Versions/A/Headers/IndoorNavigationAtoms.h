@@ -32,6 +32,7 @@ typedef enum {
 + (instancetype)blipWithDictionary:(NSDictionary *)aDict;
 + (instancetype)blipWithBean:(BlipBean*)aBlipBean;
 + (instancetype)blipWithCLBeacon:(CLBeacon*)aBeacon;
++ (NSString *)centrakBeaconUUID;
 
 @end
 
