@@ -779,16 +779,6 @@
 + (IDInstructionsViewController *_Nonnull)getInstructionsController;
 
 
-////////////////////////////////////////////////////////////////////////////////////////
-// + setDestinationTitle
-//
-/*!
- * The method returns the destination title POI.
- * @return  Instructions controller
- */
-
-+ (NSString *_Nonnull)setDestinationTitle:(NSString *_Nonnull)destination;
-
 #pragma mark - User Location APIs
 
 ////////////////////////////////////////////////////////////////////////////////////////
@@ -887,17 +877,6 @@
 
 
 #pragma mark - Parking APIs
-
-////////////////////////////////////////////////////////////////////////////////////////
-// + setParkingLocation:
-//
-/*!
- * The method set the location as parking location.
- * @param aLocation the location to set.
- */
-
-+ (void)setPoiMarkerLocation:(IDLocation *_Nullable)aLocation;
-
 
 ////////////////////////////////////////////////////////////////////////////////////////
 // + setParkingLocation:
