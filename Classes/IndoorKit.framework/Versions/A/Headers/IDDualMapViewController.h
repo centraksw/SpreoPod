@@ -220,7 +220,6 @@
 -(void)showAllFacilityIDPopup;
 - (void)showFacilityID:(NSString*)aFacilityId atCampusId:(NSString*)aCampusId;
 - (CGFloat)calcDistanceBetweenCoordinate:(CLLocationCoordinate2D)poiLocation andCoordinate:(CLLocationCoordinate2D)position;
-- (void) removeFacilityMarkers;
 - (void)updateUserMarkerOutdoorPosition;
 
 @end

@@ -951,7 +951,6 @@
 //
 /*!
  * The method reset All floors id's.
- * @return  Empty Array of all project floors ids of selected route
  */
 + (void) resetFloorsInRoute;
 
@@ -1017,7 +1016,6 @@
 //
 /*!
  * The method returns a dictionary with short information of the facility at campus.
- * @param   aFacilityId facility identifier string
  * @param   aCampusId campus identifier string
  * @return  Information dictionary contaning information on refered facility
  @code {@"title": facility.title,
@@ -1040,7 +1038,6 @@
 //
 /*!
  * The method returns a dictionary with short information of the facility at campus.
- * @param   aFacilityId facility identifier string
  * @param   aCampusId campus identifier string
  * @return  Information dictionary contaning information on refered facility
  @code {@"title": facility.title,

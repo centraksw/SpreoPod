@@ -11,7 +11,7 @@
 
 @class IDLocation;
 
-@interface IDFriend : NSObject <NSCoding, NSCopying>
+@interface IDFriend : NSObject 
 
 @property (nonatomic, readonly, copy) NSString *id;
 @property (nonatomic, readonly, copy) UIImage *icon;
