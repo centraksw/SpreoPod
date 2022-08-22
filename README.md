@@ -1,6 +1,6 @@
 
 # ================================ #
-#  DATE: 17 August, 2022   
+#  DATE: 24 August, 2022   
 # ================================ #
 
 ---------------------------------------------------------------------------------------------------------
@@ -29,9 +29,13 @@ ____________________________________
     3. SampleApp_Manual
        This sample contains example project in SWIFT 
        IndoorKit is installing mannually from sdk_binary_distribution. 
+       
+    4. SampleSPM
+       This sample contains example project in SWIFT 
+       IndoorKit is installing via Swift Package Manager. 
 
 ---------------------------------------------------------------------------------------------------------
-# SDK VERSION: 6.9.13
+# SDK VERSION: 6.9.14
 ____________________________________
 
     * Xcode Versions: Xcode 8.x
