@@ -119,20 +119,6 @@
 - (void)setMapBackgroundColor:(UIColor *)aColor;
 
 
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// - showCameraDuringNavigationWithMode:
-//
-/*!
- * showCameraDuringNavigationWithMode, will show the camera session with arrow rotated to next instruction and the user location attitude,
- * The camera session is active just during navigation.
- * by default NO.
- * @param aMode BOOL visible / hidden
- * \code  [self.mapViewController showCameraDuringNavigationWithMode];
- */
-- (void)showCameraDuringNavigationWithMode:(BOOL)aMode;
-
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // - setMapDrawTripOverviewWithPois:arrivedPois
 //
