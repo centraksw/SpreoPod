@@ -1578,7 +1578,7 @@
 + (void)setForceStop:(BOOL)forceStop;
 + (void)setColorForRoute:(UIColor*_Nonnull)aColor;
 + (void)setStrokeWidthForRoute:(int)aWidth;
-
++ (void)simulateLocationWithBLEIds:(NSArray*)bleIds;
 
 
 
