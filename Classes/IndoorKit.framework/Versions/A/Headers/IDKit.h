@@ -306,6 +306,7 @@
  @endcode
  */
 + (void)sendAnalyticsReportWithAction:(NSString*_Nullable)anAction andTitle:(NSString*_Nullable)aTtile floorId:(NSInteger)floorID campusId:(NSString*_Nullable)campusID facilityId:(NSString*_Nullable)facilityID;
++ (void)generageAnalyticsCliendID;
 
 ////////////////////////////////////////////////////////////////////////////////////////
 // + enableLogging:
