@@ -19,7 +19,7 @@
 
 @interface IDDualMapViewController : UIViewController <IDMapViewProtocol, IDNavigationDelegate, IDLocationListener>
 
-@property (nonatomic, strong) IBOutlet GMSMapView *mapView_;
+@property (nonatomic, retain) IBOutlet GMSMapView *mapView_;
 
 /*!
  * @brief set green marker for origin in navigation.
@@ -221,6 +221,7 @@
 - (void)showFacilityID:(NSString*)aFacilityId atCampusId:(NSString*)aCampusId;
 - (CGFloat)calcDistanceBetweenCoordinate:(CLLocationCoordinate2D)poiLocation andCoordinate:(CLLocationCoordinate2D)position;
 - (void)updateUserMarkerOutdoorPosition;
+- (void)releaseMap;
 
 @end
 

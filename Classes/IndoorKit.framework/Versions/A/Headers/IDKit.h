@@ -1581,6 +1581,6 @@
 + (void)setStrokeWidthForRoute:(int)aWidth;
 + (void)simulateLocationWithBLEIds:(NSArray*)bleIds;
 
-
++ (void)reset;
 
 @end
