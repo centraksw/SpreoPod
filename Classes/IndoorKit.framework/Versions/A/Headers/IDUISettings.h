@@ -8,7 +8,25 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol IDUISettingsDelegate <NSObject>
+
+- (void)showIndoorPicker:(BOOL)show;
+- (void)changeIndoorPickerBackgroundColor:(UIColor *)color;
+- (void)changeIndoorPickerOrigin:(CGPoint)origin;
+- (void)rotateGestures:(BOOL)rotate;
+- (void)showMyLocationButton:(BOOL)show;
+- (void)show3DBuildings:(BOOL)show;
+- (void)displayTopFloorContent:(BOOL)display;
+
+@end
+
 @interface IDUISettings : NSObject
+
+/**
+ * Delegate protocol to tracking settings changes
+ */
+
+@property (nonatomic, assign) id <IDUISettingsDelegate>delegate;
 
 /**
  * Enables (default) or disables the indoor floor picker. If enabled, it is only

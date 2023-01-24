@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <GoogleMaps/GoogleMaps.h>
 
+@class GMSMarker;
 @class IDLocation;
 
 @interface IDFriend : NSObject 
